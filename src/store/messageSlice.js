@@ -20,6 +20,6 @@ const messageSlice = createSlice({
     }
 })
 
-export const actionCreators = messageSlice.actions
+export const messageCreators = messageSlice.actions
 
 export default messageSlice.reducer

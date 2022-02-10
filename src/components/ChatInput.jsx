@@ -8,9 +8,11 @@ const ChatInput = () => {
     const keyPressHandler = (event) => {
         if(event.key === 'Enter') {
             event.preventDefault()
-            console.log(event.target.value)
-            addMessage(event.target.value)
-            event.target.value = ''
+            if (event.target.value) {
+                addMessage(event.target.value)
+                event.target.value = ''
+            }
+            
         }
     }
 
